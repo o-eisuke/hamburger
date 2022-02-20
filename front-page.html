@@ -6,100 +6,105 @@
   <link rel="stylesheet" href="sass/style.css">
   <title>front-page</title>
 </head>
+
 <body>
-  <header>
-    <button>
-      <span>Menu</span>
-    </button>
-    <h1>Hamburger</h1>
-    <form action="">
-      <input type="text">
-      <button>検索</button>
-    </form>
-  </header>
+  <div class="l-container">
 
-  <article>
-    <div>
-      <h2>ダミーサイト</h2>
-    </div>
+    <header class="l-header p-header">
+      <button class="p-header__button c-button">
+        <span>Menu</span>
+      </button>
+      <h1 class="p-header__title c-title">Hamburger</h1>
+      <form class="p-form" action="">
+        <input class="p-form__input c-input" type="text">
+        <button class="p-form__button c-button">検索</button>
+      </form>
+    </header>
 
-    <ul>
-      <li>
-        <h2>Take Out</h2>
-        <dl>
-          <dt>Take OUT</dt>
-          <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-        </dl>
-        <dl>
-          <dt>Take OUT</dt>
-          <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-        </dl>
-      </li>
-      <li>
-        <h2>Eat In</h2>
-        <dl>
-          <dt>Take OUT</dt>
-          <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-        </dl>
-        <dl>
-          <dt>Take OUT</dt>
-          <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-        </dl>
-      </li>
-    </ul>
+    <article class="l-article p-article">
+      <div class="p-mainvisual">
+        <h2 class="p-mainvisual__title c-title">ダミーサイト</h2>
+      </div>
 
-    <section>
-      <h2>見出しが入ります</h2>
-      <p>
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-      </p>
-        <div>
+      <ul class="p-foodmenu">
+        <li class="p-foodmenu__list">
+          <h2 class="p-foodmenu__title c-title">Take Out</h2>
+          <dl class="p-foodmenu__dl">
+            <dt class="p-foodmenu__dt c-text">Take OUT</dt>
+            <dd class="p-foodmenu__dd c-text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+          </dl>
+          <dl class="p-foodmenu__dl">
+            <dt class="p-foodmenu__dt c-text">Take OUT</dt>
+            <dd class="p-foodmenu__dd c-text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+          </dl>
+        </li>
+        <li class="p-foodmenu__list">
+          <h2 class="p-foodmenu__title c-title">Eat In</h2>
+          <dl class="p-foodmenu__dl">
+            <dt class="p-foodmenu__dt c-text">Take OUT</dt>
+            <dd class="p-foodmenu__dd c-text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+          </dl>
+          <dl class="p-foodmenu__dl">
+            <dt class="p-foodmenu__dt c-text">Take OUT</dt>
+            <dd class="p-foodmenu__dd c-text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+          </dl>
+        </li>
+      </ul>
+
+      <section class="p-access">
+        <h2 class="h2（p-access__title c-title">見出しが入ります</h2>
+        <p class="p-access__text c-text">
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        </p>
+        <div class="p-access__map c-bg">
 
         </div>
-    </section>
-  </article>
+      </section>
+    </article>
 
-  <aside>
-    <h3>バーガー</h3>
-    <ul>
-      <li>ハンバーガー</li>
-      <li>チーズバーガー</li>
-      <li>テリヤキバーガー</li>
-      <li>アボカドバーガー</li>
-      <li>フィッシュバーガー</li>
-      <li>ベーコンバーガー</li>
-      <li>チキンバーガー</li>
-    </ul>
-    <h3>サイド</h3>
-    <ul>
-      <li>ポテト</li>
-      <li>サラダ</li>
-      <li>ナゲット</li>
-      <li>コーン</li>
-    </ul>
-    <h3>ドリンク</h3>
-    <ul>
-      <li>コーラ</li>
-      <li>ファンタ</li>
-      <li>オレンジ</li>
-      <li>アップル</li>
-      <li>紅茶（Ice/Hot）</li>
-      <li>コーヒー（Ice/Hot）</li>
-    </ul>
-  </aside>
+    <aside class="l-aside">
+      <h3 class="p-aside__title c-title">バーガー</h3>
+      <ul class="p-menu">
+        <li class="c-menu-list">ハンバーガー</li>
+        <li class="c-menu-list">チーズバーガー</li>
+        <li class="c-menu-list">テリヤキバーガー</li>
+        <li class="c-menu-list">アボカドバーガー</li>
+        <li class="c-menu-list">フィッシュバーガー</li>
+        <li class="c-menu-list">ベーコンバーガー</li>
+        <li class="c-menu-list">チキンバーガー</li>
+      </ul>
+      <h3 class="p-aside__title c-title">サイド</h3>
+      <ul class="p-menu">
+        <li class="c-menu-list">ポテト</li>
+        <li class="c-menu-list">サラダ</li>
+        <li class="c-menu-list">ナゲット</li>
+        <li class="c-menu-list">コーン</li>
+      </ul>
+      <h3 class="h3（p-aside__title c-title">ドリンク</h3>
+      <ul class="p-menu">
+        <li class="c-menu-list">コーラ</li>
+        <li class="c-menu-list">ファンタ</li>
+        <li class="c-menu-list">オレンジ</li>
+        <li class="c-menu-list">アップル</li>
+        <li class="c-menu-list">紅茶（Ice/Hot）</li>
+        <li class="c-menu-list">コーヒー（Ice/Hot）</li>
+      </ul>
+    </aside>
 
-  <footer>
-    <ul>
-      <li>ショップ情報</li>
-      <li>ヒストリー</li>
-    </ul>
-    <address>Copyright: RaiseTech</address>
-  </footer>
+    <footer class="l-footer">
+      <ul class="p-footer__ul">
+        <li class="c-link">ショップ情報</li>
+        <li class="c-link">ヒストリー</li>
+      </ul>
+      <address class="p-footer__copyright c-text">Copyright: RaiseTech</address>
+    </footer>
+
+</div>
   
 </body>
 </html>
