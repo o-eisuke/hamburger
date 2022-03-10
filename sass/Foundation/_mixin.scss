@@ -1,0 +1,17 @@
+// ブレークポイント
+
+// $sp:
+$tb:600px;
+$pc:1025px;
+
+@mixin tb {
+  @media screen and (min-width: ($tb)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (min-width: ($pc)) {
+    @content;
+  }
+}

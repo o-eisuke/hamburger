@@ -1,0 +1,9 @@
+@use "../Foundation/mixin";
+
+.l-aside {
+  @include mixin.pc {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  
+}

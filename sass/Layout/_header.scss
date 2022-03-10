@@ -1,0 +1,9 @@
+@use "../Foundation/variable";
+
+.l-header {
+  height: 217px;
+  width: 375px;
+  background-color: variable.$header-bg-color;
+  // display: flex;
+
+}

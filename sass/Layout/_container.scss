@@ -1,0 +1,9 @@
+@use "../Foundation/mixin";
+
+.l-container {
+  @include mixin.pc {
+    display: grid;
+    grid-template-columns: 1fr 19%;
+    grid-template-rows: 1fr 150px;
+  }
+}
