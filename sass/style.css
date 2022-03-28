@@ -22,9 +22,8 @@
 
 .l-header {
   height: 217px;
-  width: 375px;
+  width: 100%;
   background-color: #FFF7EF;
-  display: flex;
 }
 
 @media screen and (min-width: 1025px) {
@@ -34,8 +33,18 @@
   }
 }
 
-.p-header__button {
-  justify-content: right;
+.p-header__menu {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+}
+
+.p-header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 h1 {
