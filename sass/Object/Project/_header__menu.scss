@@ -1,7 +1,12 @@
 .p-header__menu {
+  // 位置を調整
   position: absolute;
   top: 14px;
   right: 16px;
-  // left: 308px;
-  // justify-content: right;
+  // ボタンのデザイン変更
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: Roboto;
+  color: #707070;
 }

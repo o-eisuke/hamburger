@@ -20,10 +20,13 @@
 * ========================== */
 /* Component ------------ */
 @use "Object/Component/button";
+@use "Object/Component/input";
 
 
 /* Project ------------ */
+@use "Object/Project/form";
 @use "Object/Project/header__menu";
+@use "Object/Project/header__title";
 @use "Object/Project/header" as hd;
 @use "Object/Project/mainvisual";
 

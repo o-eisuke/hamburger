@@ -1,8 +1,15 @@
 .p-header {
+  // ヘッダーを縦並び
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
 
+  // ボタンの配置
   position: relative;
+  
+  // ヘッダーの余白調整
+  
+
 }
