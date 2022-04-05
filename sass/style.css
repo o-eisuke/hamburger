@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (min-width: 1025px) {
   .l-aside {
     grid-row: 1/2;
@@ -46,15 +47,39 @@
   border: solid 1px;
 }
 
+.p-form__input {
+  margin-right: 12px;
+}
+
 .p-form {
+  display: inline-block;
+  /* なくても大丈夫だけど、念の為 */
+  position: relative;
+  /* 基準値とする */
+}
+.p-form::before {
+  content: "";
+  /* 疑似要素に必須 */
+  width: 24px;
+  /* アイコンの横幅 */
+  height: 24px;
+  /* アイコンの高さ */
+  background: url(../../../images/sp-seaech-icon.png) no-repeat center center/auto 100%;
+  /* 背景にアイコン画像を配置 */
+  display: inline-block;
+  /* 高さを持たせるためにインラインブロック要素にする */
   position: absolute;
-  top: 131px;
-  right: 31px;
-  left: 24px;
+  /* 相対位置に指定 */
+  left: 16px;
+  /* アイコンの位置。微調整してね */
+  transform: translateY(-50%);
+  top: 50%;
 }
 .p-form__input {
   width: 230px;
   height: 46px;
+  padding: 3px 0 3px 3em;
+  /* アイコンを設置するため左の余白を多めに指定*/
 }
 .p-form__button {
   width: 78px;

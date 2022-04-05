@@ -1,18 +1,39 @@
 .p-form {
   // フォーム位置の調整
-  position: absolute;
-  top: 131px;
-  right: 31px;
-  left: 24px;
+  // position: absolute;
+  // top: 131px;
+  // right: 31px;
+  // left: 24px;
+
+  // 虫眼鏡の配置
+  display: inline-block; /* なくても大丈夫だけど、念の為 */
+  position: relative;    /* 基準値とする */
+
+  &::before {
+    content: "";           /* 疑似要素に必須 */
+    width: 24px;           /* アイコンの横幅 */
+    height: 24px;          /* アイコンの高さ */
+    background: url(../../../images/sp-seaech-icon.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+    position: absolute;    /* 相対位置に指定 */
+    // top: 9px;              /* アイコンの位置。微調整してね */
+    left: 16px;             /* アイコンの位置。微調整してね */
+    // vertical-align: middle;
+    transform: translateY(-50%);
+    top: 50%;
+  }
 
   // インプットタグ
   &__input {
     // 高さと幅
     width: 230px;
     height: 46px;
+
+    // 虫眼鏡のための余白
+    padding: 3px 0 3px 3em; /* アイコンを設置するため左の余白を多めに指定*/
   }
 
-  // ボタンタグの
+  // ボタンタグ
   &__button {
     // 高さと幅
     width: 78px;
