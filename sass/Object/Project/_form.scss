@@ -1,14 +1,10 @@
-.p-form {
-  // フォーム位置の調整
-  // position: absolute;
-  // top: 131px;
-  // right: 31px;
-  // left: 24px;
+@use "../../Foundation/mixin" as m;
 
-  // 虫眼鏡の配置
+.p-form {
+
+  // インプットタグの虫眼鏡の配置
   display: inline-block; /* なくても大丈夫だけど、念の為 */
   position: relative;    /* 基準値とする */
-
   &::before {
     content: "";           /* 疑似要素に必須 */
     width: 24px;           /* アイコンの横幅 */
@@ -23,17 +19,16 @@
     top: 50%;
   }
 
-  // インプットタグ
+  // フォームのインプットタグ
   &__input {
     // 高さと幅
     width: 230px;
     height: 46px;
-
-    // 虫眼鏡のための余白
+    // 虫眼鏡のための左の余白
     padding: 3px 0 3px 3em; /* アイコンを設置するため左の余白を多めに指定*/
   }
 
-  // ボタンタグ
+  // フォールのボタンタグ
   &__button {
     // 高さと幅
     width: 78px;
@@ -41,6 +36,12 @@
     // フォント
     font-size: 16px;
     font-weight: bold;
+  }
+
+  @include m.pc {
+    position: absolute;
+    top: 86px;
+    right: 398px;
   }
 
 }

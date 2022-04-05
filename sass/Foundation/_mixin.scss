@@ -1,8 +1,14 @@
-// ブレークポイント
+// 【★ブレークポイント★】
 
-// $sp:
+// $sp:375px;
 $tb:600px;
 $pc:1025px;
+
+// @mixin sp {
+//   @media screen and (min-width: ($sp)) {
+//     @content;
+//   }
+// }
 
 @mixin tb {
   @media screen and (min-width: ($tb)) {

@@ -1,3 +1,5 @@
+@use "../../Foundation/mixin" as m;
+
 .p-header {
   // ヘッダーを縦並び
   display: flex;
@@ -11,5 +13,11 @@
   
   // ヘッダーの余白調整
   
+  @include m.pc {
+    flex-direction: row;
+    // justify-content: space-around;
+    margin: auto 0;
+    margin-bottom: initial;
+  }
 
 }

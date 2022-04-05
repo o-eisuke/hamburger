@@ -6,4 +6,14 @@
     grid-template-columns: 1fr 19%;
     grid-template-rows: 1fr 150px;
   }
+
+  // @include mixin.tb {
+  //   // asideクラスを非表示にするため
+  //   position: relative;
+  // }
+
+  // @include mixin.sp {
+  //   // asideクラスを非表示にするため
+  //   // position: relative;
+  // }
 }

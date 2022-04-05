@@ -1,3 +1,5 @@
+@use "../../Foundation/mixin" as m;
+
 .p-header__menu {
   // 位置を調整
   position: absolute;
@@ -9,4 +11,8 @@
   font-size: 20px;
   font-family: Roboto;
   color: #707070;
+
+  @include m.pc {
+    display: none;
+  }
 }

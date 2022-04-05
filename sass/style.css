@@ -26,6 +26,11 @@
   width: 100%;
   background-color: #FFF7EF;
 }
+@media screen and (min-width: 1025px) {
+  .l-header {
+    position: relative;
+  }
+}
 
 @media screen and (min-width: 1025px) {
   .l-main {
@@ -87,6 +92,13 @@
   font-size: 16px;
   font-weight: bold;
 }
+@media screen and (min-width: 1025px) {
+  .p-form {
+    position: absolute;
+    top: 86px;
+    right: 398px;
+  }
+}
 
 .p-header__menu {
   position: absolute;
@@ -98,11 +110,24 @@
   font-family: Roboto;
   color: #707070;
 }
+@media screen and (min-width: 1025px) {
+  .p-header__menu {
+    display: none;
+  }
+}
 
 .p-header__title {
+  color: #707070;
   font-size: 40px;
   font-family: Roboto;
   margin-bottom: 38px;
+}
+@media screen and (min-width: 1025px) {
+  .p-header__title {
+    position: absolute;
+    top: 67px;
+    left: 65px;
+  }
 }
 
 .p-header {
@@ -113,9 +138,29 @@
   margin: 0 auto;
   position: relative;
 }
+@media screen and (min-width: 1025px) {
+  .p-header {
+    flex-direction: row;
+    margin: auto 0;
+    margin-bottom: initial;
+  }
+}
 
-h1 {
-  color: #707070;
+.p-mainvisual__title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  left: 25px;
+}
+
+.p-mainvisual {
+  height: 285px;
+  background: url(../../../images/sp_mainvisual.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 /**
