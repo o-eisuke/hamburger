@@ -26,9 +26,18 @@
     height: 46px;
     // 虫眼鏡のための左の余白
     padding: 3px 0 3px 3em; /* アイコンを設置するため左の余白を多めに指定*/
+    // 右の余白
+    margin-right: 13px;
+
+    @include m.tb {
+      // インプットタグの幅
+      width: 396px;
+      // 右に余白
+      margin-right: 13px;
+    }
   }
 
-  // フォールのボタンタグ
+  // フォームのボタンタグ
   &__button {
     // 高さと幅
     width: 78px;
@@ -36,12 +45,18 @@
     // フォント
     font-size: 16px;
     font-weight: bold;
+
+    @include m.tb {
+      // ボタンタグの幅
+      width: 136px;
+    }
   }
 
-  @include m.pc {
+  // PC版のフォームの位置
+  @include m.subpc {
     position: absolute;
     top: 86px;
-    right: 398px;
+    right: 31px;
   }
 
 }

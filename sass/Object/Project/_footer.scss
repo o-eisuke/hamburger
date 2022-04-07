@@ -1,0 +1,20 @@
+@use "../../Foundation/mixin" as m;
+
+.p-footer {
+  background: url(../../../images/sp_footer.png);
+  background-size: cover;
+  width: 375px;
+  height: 150px;
+
+  @include m.tb {
+    background: url(../../../images/tb_footer.png);
+    background-size: cover;
+    width: 834px;
+  }
+
+  @include m.pc {
+    background: url(../../../images/pc_footerf.png);
+    background-size: cover;
+    width: 100%;
+  }
+}

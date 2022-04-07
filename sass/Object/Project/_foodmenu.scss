@@ -1,0 +1,22 @@
+.p-foodmenu {
+  list-style: none;
+
+  &__list1 {
+    background: url(../../../images/takeOut.png);
+    background-size: cover;
+    // width: 625px;
+    height: 1193px;
+    width: 432px;
+
+  }
+
+  &__list2 {
+    background: url(../../../images/eatIn.png);
+    background-size: cover;
+    // width: 625px;
+    height: 1193px;
+    width: 432px;
+
+  }
+
+}

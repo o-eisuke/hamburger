@@ -3,6 +3,7 @@
 // $sp:375px;
 $tb:600px;
 $pc:1025px;
+$subpc:1250px;
 
 // @mixin sp {
 //   @media screen and (min-width: ($sp)) {
@@ -18,6 +19,12 @@ $pc:1025px;
 
 @mixin pc {
   @media screen and (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin subpc {
+  @media screen and (min-width: ($subpc)) {
     @content;
   }
 }

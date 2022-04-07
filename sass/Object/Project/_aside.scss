@@ -1,0 +1,12 @@
+@use "../../Foundation/mixin" as m;
+
+.p-aside {
+  position: absolute;
+  right: -375px;
+
+  @include m.tb {
+    position: absolute;
+    right: -600px;
+  }
+  
+}

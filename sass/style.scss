@@ -24,13 +24,13 @@
 
 
 /* Project ------------ */
-@use "Object/Project/form__input";
+@use "Object/Project/aside" as ad;
+@use "Object/Project/foodmenu";
+@use "Object/Project/footer" as ft;
 @use "Object/Project/form";
-@use "Object/Project/header__menu";
-@use "Object/Project/header__title";
 @use "Object/Project/header" as hd;
-@use "Object/Project/mainvisual__title";
 @use "Object/Project/mainvisual";
+@use "Object/Project/menu";
 
 
 /* Utility ------------ */

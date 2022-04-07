@@ -1,8 +1,5 @@
+@use "../../Foundation/mixin" as m;
 @use "../../Foundation/variable" as v;
-
-// h1 {
-//   color: variable.$mainColor;
-// }
 
 .p-mainvisual {
   // 画像を配置
@@ -14,5 +11,29 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  &__title {
+    // フォント
+  color: v.$whiteFont;
+  font-size: 36px;
+  font-weight: bold;
+
+  // フォントを中央縦揃え（子要素）
+  position: absolute;
+  left: 25px;
+  }
+
+  @include m.tb {
+    background: url(../../../images/tb_mainvisual.png);
+    background-size: cover;
+  }
+
+  @include m.pc {
+    background: url(../../../images/pc_mainvisual.png);
+    background-size: cover;
+    height: 530px;
+    font-size: 40px;
+    font-weight: bold;
+  }
 }
 
