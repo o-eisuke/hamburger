@@ -1,12 +1,64 @@
 @use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
 
 .p-aside {
-  position: absolute;
-  right: -375px;
+  position: fixed;
+  top: 0;
+  right: -100%;
 
   @include m.tb {
-    position: absolute;
-    right: -600px;
+    
   }
-  
+
+  @include m.pc {
+    position: static;
+    right: 0;
+  }
+
+  &__menu {
+    display: none;
+    color: v.$mainColor;
+    
+
+
+    @include m.pc {
+      display: block;
+      margin-top: 82px;
+      margin-bottom: 85px;
+      margin-left: 46px;
+    }
+  }
+
+  &__title1 {
+    font-weight: bold;
+    color: v.$mainColor;
+    margin-top: 212px;
+    margin-bottom: 40px;
+    margin-left: 46px;
+
+    @include m.pc {
+      margin-top: initial;
+    }
+  }
+
+  &__title2 {
+    font-weight: bold;
+    color: v.$mainColor;
+    margin-top: 20px;
+    margin-bottom: 39px;
+    margin-left: 46px;
+  }
+
+  &__title3 {
+    font-weight: bold;
+    color: v.$mainColor;
+    margin-top: 20px;
+    margin-bottom: 38px;
+    margin-left: 46px;
+  }
+
+
+
+
+
 }

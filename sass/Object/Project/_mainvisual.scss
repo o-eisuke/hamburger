@@ -6,6 +6,7 @@
   height: 285px;
   background: url(../../../images/sp_mainvisual.png);
   background-size: cover;
+  background-position: center;
 
   // フォントを中央縦揃え（親要素）
   display: flex;
@@ -29,7 +30,7 @@
   }
 
   @include m.pc {
-    background: url(../../../images/pc_mainvisual.png);
+    background: url(../../../images/mainVisual.png);
     background-size: cover;
     height: 530px;
     font-size: 40px;

@@ -1,6 +1,7 @@
 /**
 * Foundation
 * ========================== */
+@use "Foundation/base";
 @use "Foundation/mixin";
 @use "Foundation/variable";
 
@@ -21,6 +22,8 @@
 /* Component ------------ */
 @use "Object/Component/button";
 @use "Object/Component/input";
+@use "Object/Component/link";
+@use "Object/Component/menu-list";
 
 
 /* Project ------------ */

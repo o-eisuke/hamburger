@@ -3,7 +3,8 @@
 
 .l-header {
   height: 217px;
-  width: 100%;
+  // width: 100%;
+  min-width: 375px;
   background-color: v.$header-bg-color;
 
   // @include m.tb {

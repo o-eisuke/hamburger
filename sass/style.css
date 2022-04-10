@@ -1,4 +1,9 @@
 @charset "UTF-8";
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .l-aside {
   background-color: #F2EDE9;
 }
@@ -26,7 +31,7 @@
 
 .l-header {
   height: 217px;
-  width: 100%;
+  min-width: 375px;
   background-color: #FFF7EF;
 }
 @media screen and (min-width: 1025px) {
@@ -56,54 +61,173 @@
   border: solid 1px;
 }
 
-.p-aside {
-  position: absolute;
-  right: -375px;
+.c-link {
+  color: #ffffff;
 }
-@media screen and (min-width: 600px) {
+
+.c-menu-list {
+  color: #707070;
+  margin-bottom: 23px;
+}
+
+.p-aside {
+  position: fixed;
+  top: 0;
+  right: -100%;
+}
+@media screen and (min-width: 1025px) {
   .p-aside {
-    position: absolute;
-    right: -600px;
+    position: static;
+    right: 0;
   }
+}
+.p-aside__menu {
+  display: none;
+  color: #707070;
+}
+@media screen and (min-width: 1025px) {
+  .p-aside__menu {
+    display: block;
+    margin-top: 82px;
+    margin-bottom: 85px;
+    margin-left: 46px;
+  }
+}
+.p-aside__title1 {
+  font-weight: bold;
+  color: #707070;
+  margin-top: 212px;
+  margin-bottom: 40px;
+  margin-left: 46px;
+}
+@media screen and (min-width: 1025px) {
+  .p-aside__title1 {
+    margin-top: initial;
+  }
+}
+.p-aside__title2 {
+  font-weight: bold;
+  color: #707070;
+  margin-top: 20px;
+  margin-bottom: 39px;
+  margin-left: 46px;
+}
+.p-aside__title3 {
+  font-weight: bold;
+  color: #707070;
+  margin-top: 20px;
+  margin-bottom: 38px;
+  margin-left: 46px;
 }
 
 .p-foodmenu {
   list-style: none;
 }
+@media screen and (min-width: 600px) {
+  .p-foodmenu {
+    display: flex;
+  }
+}
 .p-foodmenu__list1 {
   background: url(../../../images/takeOut.png);
   background-size: cover;
-  height: 1193px;
-  width: 432px;
+  min-width: 335px;
+  min-height: 642px;
+  margin: 20px 20px 0 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-foodmenu__list1 {
+    min-width: 357px;
+    min-height: 681px;
+    margin: 40px 41px 40px 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-foodmenu__list1 {
+    height: 1193px;
+    width: 40%;
+    margin: 120px 80px 134px 111px;
+  }
 }
 .p-foodmenu__list2 {
   background: url(../../../images/eatIn.png);
   background-size: cover;
-  height: 1193px;
-  width: 432px;
+  min-width: 335px;
+  min-height: 642px;
+  margin: 20px 20px 49px 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-foodmenu__list2 {
+    min-width: 357px;
+    min-height: 681px;
+    margin: 40px 40px 40px 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-foodmenu__list2 {
+    height: 1193px;
+    width: 40%;
+    margin: 120px 112px 134px 0;
+  }
+}
+.p-foodmenu__title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 41px;
+  margin-top: 11px;
+  margin-left: 10px;
+  position: relative;
+}
+.p-foodmenu__title::after {
+  content: "";
+  display: block;
+  width: 33.89px;
+  height: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -34.5px;
+  left: 26.5px;
+}
+.p-foodmenu__dl1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 585px;
+  height: 174px;
+}
+.p-foodmenu__dt {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3C2A10;
+}
+.p-foodmenu__dd {
+  font-size: 16px;
+  color: #3C2A10;
+}
+.p-foodmenu__dl2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 585px;
+  height: 174px;
 }
 
 .p-footer {
   background: url(../../../images/sp_footer.png);
   background-size: cover;
-  width: 375px;
   height: 150px;
 }
 @media screen and (min-width: 600px) {
   .p-footer {
     background: url(../../../images/tb_footer.png);
     background-size: cover;
-    width: 834px;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-footer {
     background: url(../../../images/pc_footerf.png);
     background-size: cover;
-    width: 100%;
   }
 }
-
+.p-footer__ul {
+  display: flex;
+}
 .p-form {
   display: inline-block;
   /* なくても大丈夫だけど、念の為 */
@@ -201,6 +325,7 @@
   height: 285px;
   background: url(../../../images/sp_mainvisual.png);
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   position: relative;
@@ -220,7 +345,7 @@
 }
 @media screen and (min-width: 1025px) {
   .p-mainvisual {
-    background: url(../../../images/pc_mainvisual.png);
+    background: url(../../../images/mainVisual.png);
     background-size: cover;
     height: 530px;
     font-size: 40px;
@@ -230,6 +355,8 @@
 
 .p-menu {
   list-style: none;
+  margin-bottom: 40px;
+  margin-left: 66px;
 }
 
 /**

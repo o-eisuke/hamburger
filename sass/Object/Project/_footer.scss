@@ -1,20 +1,29 @@
 @use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
 
 .p-footer {
   background: url(../../../images/sp_footer.png);
   background-size: cover;
-  width: 375px;
+  // width: 375px;
   height: 150px;
 
   @include m.tb {
     background: url(../../../images/tb_footer.png);
     background-size: cover;
-    width: 834px;
+    // width: 834px;
   }
 
   @include m.pc {
     background: url(../../../images/pc_footerf.png);
     background-size: cover;
-    width: 100%;
+    // width: 100%;
+  }
+
+  &__ul {
+    display: flex;
+  }
+
+  %__copyright {
+    color: v.$whiteFont;
   }
 }

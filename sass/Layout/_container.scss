@@ -1,6 +1,9 @@
 @use "../Foundation/mixin";
 
 .l-container {
+  // asideクラスを非表示にする
+  // position: relative;
+
   @include mixin.pc {
     display: grid;
     grid-template-columns: 1fr 19%;
