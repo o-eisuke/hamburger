@@ -7,6 +7,9 @@
   // width: 375px;
   height: 150px;
 
+  // 下のリンクと著作を配置
+  // position: relative;
+
   @include m.tb {
     background: url(../../../images/tb_footer.png);
     background-size: cover;
@@ -21,9 +24,19 @@
 
   &__ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    // margin: auto;
+    // top: 40px;
+    // right: 63px;
   }
 
-  %__copyright {
+  &__copyright {
     color: v.$whiteFont;
+    font-size: 14px;
+    // position: absolute;
+    // top: 101px;
+    // right: 118px;
   }
 }

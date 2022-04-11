@@ -1,5 +1,7 @@
 @use "../../Foundation/variable" as v;
 
 .c-link {
+  list-style: none;
   color: v.$whiteFont;
+  font-size: 20px;
 }

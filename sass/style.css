@@ -62,7 +62,9 @@ ul {
 }
 
 .c-link {
+  list-style: none;
   color: #ffffff;
+  font-size: 20px;
 }
 
 .c-menu-list {
@@ -212,6 +214,7 @@ ul {
   background: url(../../../images/sp_footer.png);
   background-size: cover;
   height: 150px;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .p-footer {
@@ -227,7 +230,17 @@ ul {
 }
 .p-footer__ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.p-footer__copyright {
+  color: #ffffff;
+  font-size: 14px;
+  position: absolute;
+  top: 101px;
+  right: 118px;
+}
+
 .p-form {
   display: inline-block;
   /* なくても大丈夫だけど、念の為 */
