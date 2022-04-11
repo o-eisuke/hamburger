@@ -9,6 +9,10 @@
 
   // 下のリンクと著作を配置
   // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   @include m.tb {
     background: url(../../../images/tb_footer.png);
@@ -26,6 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     // position: absolute;
     // margin: auto;
     // top: 40px;
@@ -35,8 +40,11 @@
   &__copyright {
     color: v.$whiteFont;
     font-size: 14px;
+    margin-top: 34px;
     // position: absolute;
     // top: 101px;
     // right: 118px;
+    // justify-content: center;
+    // align-items: center;
   }
 }

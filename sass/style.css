@@ -214,7 +214,10 @@ ul {
   background: url(../../../images/sp_footer.png);
   background-size: cover;
   height: 150px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media screen and (min-width: 600px) {
   .p-footer {
@@ -236,9 +239,7 @@ ul {
 .p-footer__copyright {
   color: #ffffff;
   font-size: 14px;
-  position: absolute;
-  top: 101px;
-  right: 118px;
+  margin-top: 34px;
 }
 
 .p-form {
