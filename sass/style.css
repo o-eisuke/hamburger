@@ -86,6 +86,7 @@ a {
 }
 
 .p-access {
+  min-width: 375px;
   background: url(../../../images/sp_Map.png);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.4);
@@ -153,6 +154,7 @@ a {
 
 .p-foodmenu {
   list-style: none;
+  min-width: 375px;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu {
@@ -216,32 +218,39 @@ a {
   height: 4px;
   background-color: #ffffff;
   position: absolute;
-  bottom: -34.5px;
-  left: 26.5px;
+  bottom: -27px;
 }
 .p-foodmenu__dl1 {
   background-color: rgba(255, 255, 255, 0.8);
-  width: 585px;
-  height: 174px;
+  width: auto;
+  height: 162px;
+  margin: 237px 10px 9px 10px;
+}
+.p-foodmenu__dl2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: auto;
+  height: 162px;
+  margin: 0px 10px 10px 10px;
 }
 .p-foodmenu__dt {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
+  font-family: "M+ 1m";
   color: #3C2A10;
+  padding-top: 19px;
+  margin-bottom: 19px;
+  margin-left: 10px;
 }
 .p-foodmenu__dd {
   font-size: 16px;
   color: #3C2A10;
-}
-.p-foodmenu__dl2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 585px;
-  height: 174px;
+  margin: 0 14px 23px 10px;
 }
 
 .p-footer {
   background: url(../../../images/sp_footer.png);
   background-size: cover;
+  min-width: 375px;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -369,6 +378,8 @@ a {
 
 .p-mainvisual {
   height: 285px;
+  width: auto;
+  min-width: 375px;
   background: url(../../../images/sp_mainvisual.png);
   background-size: cover;
   background-position: center;
@@ -393,7 +404,7 @@ a {
   .p-mainvisual {
     background: url(../../../images/mainVisual.png);
     background-size: cover;
-    height: 530px;
+    height: 400px;
     font-size: 40px;
     font-weight: bold;
   }

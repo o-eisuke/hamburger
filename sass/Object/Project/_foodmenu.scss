@@ -3,6 +3,7 @@
 
 .p-foodmenu {
   list-style: none;
+  min-width: 375px;
 
   @include m.tb {
     display: flex;
@@ -60,6 +61,8 @@
     margin-top: 11px;
     margin-left: 10px;
     position: relative;
+
+    //疑似要素で下線を作成
     &::after {
       content:"";
       display:block;
@@ -67,34 +70,41 @@
       height: 4px;
       background-color: v.$whiteFont;
       position: absolute;
-      bottom: -34.5px;
-      left: 26.5px;
+      bottom: -27px;
     }
   }
 
   &__dl1 {
     background-color: rgba(255, 255, 255, 0.8);
-    width: 585px;
-    height: 174px;
-    // margin: 805px 20px 20px 20px;
+    width: auto;
+    height: 162px;
+    margin: 237px 10px 9px 10px;
 
   }
 
+  &__dl2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    height: 162px;
+    margin: 0px 10px 10px 10px;
+    
+  }
+
   &__dt {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
+    font-family: "M+ 1m";
     color: v.$brownColor;
+    padding-top: 19px;
+    margin-bottom: 19px;
+    margin-left: 10px;
+
   }
 
   &__dd {
     font-size: 16px;
     color: v.$brownColor;
-  }
-
-  &__dl2 {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 585px;
-    height: 174px;
+    margin: 0 14px 23px 10px;
   }
 
 }
