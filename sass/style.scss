@@ -24,9 +24,11 @@
 @use "Object/Component/input";
 @use "Object/Component/link";
 @use "Object/Component/menu-list";
+@use "Object/Component/partition";
 
 
 /* Project ------------ */
+@use "Object/Project/access";
 @use "Object/Project/aside" as ad;
 @use "Object/Project/foodmenu";
 @use "Object/Project/footer" as ft;
