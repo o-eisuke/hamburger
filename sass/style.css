@@ -98,6 +98,15 @@ a {
   background-color: rgba(0, 0, 0, 0.9);
   position: relative;
 }
+@media screen and (min-width: 600px) {
+  .p-access {
+    min-height: 415px;
+    min-width: 600px;
+    background: url(../../../images/tb_Map.png);
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: cover;
+  }
+}
 .p-access__film {
   z-index: 1;
   content: “”;
@@ -106,6 +115,11 @@ a {
   left: 0;
   height: 60%;
   background-color: rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 600px) {
+  .p-access__film {
+    height: 100%;
+  }
 }
 .p-access__article-Wrapper {
   width: 100%;
@@ -268,6 +282,11 @@ a {
   width: auto;
   height: 162px;
   margin: 237px 10px 9px 10px;
+}
+@media screen and (min-width: 600px) {
+  .p-foodmenu__dl1 {
+    margin-top: 316px;
+  }
 }
 .p-foodmenu__dl2 {
   background-color: rgba(255, 255, 255, 0.8);

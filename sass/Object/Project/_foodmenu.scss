@@ -80,7 +80,9 @@
     width: auto;
     height: 162px;
     margin: 237px 10px 9px 10px;
-
+    @include m.tb {
+      margin-top: 316px;
+    }
   }
 
   &__dl2 {
@@ -88,7 +90,6 @@
     width: auto;
     height: 162px;
     margin: 0px 10px 10px 10px;
-    
   }
 
   &__dt {
