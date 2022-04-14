@@ -3,13 +3,12 @@
 
 .l-header {
   height: 217px;
-  // width: 100%;
   min-width: 375px;
   background-color: v.$header-bg-color;
 
-  // @include m.tb {
-
-  // }
+  @include m.tb {
+    min-width: 600px;
+  }
 
   @include m.pc {
     // タイトルとフォームの配置を左右に配置（親要素）

@@ -1,8 +1,12 @@
+@use "../../Foundation/mixin" as m;
+
 .p-access {
+  height: 691px;
   min-width: 375px;
   background: url(../../../images/sp_Map.png);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.4);
+  // background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
   position: relative;
 
   // &::after {
@@ -23,7 +27,51 @@
     top: 0;
     left: 0;
     height: 60%;
-    background-color: rgba(black, 0.7);
+    background-color: rgba(0,0,0, 0.4);
+    // background-color: rgba(black, 0.7);
+  }
+
+  &__article-Wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    // text-align: center;
+    padding: 2rem;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    position: relative;
+
+    &::after {
+      content:"";
+      display:block;
+      width: 75px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -20px;
+    }
+    
+  }
+
+  &__text {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+  }
+
+  @include m.tb {
+    height: 415px;
   }
 
   

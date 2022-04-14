@@ -39,6 +39,11 @@ a {
   min-width: 375px;
   background-color: #FFF7EF;
 }
+@media screen and (min-width: 600px) {
+  .l-header {
+    min-width: 600px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .l-header {
     position: relative;
@@ -86,10 +91,11 @@ a {
 }
 
 .p-access {
+  height: 691px;
   min-width: 375px;
   background: url(../../../images/sp_Map.png);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
   position: relative;
 }
 .p-access__film {
@@ -99,7 +105,44 @@ a {
   top: 0;
   left: 0;
   height: 60%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.p-access__article-Wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 2rem;
+}
+.p-access__title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  position: relative;
+}
+.p-access__title::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -20px;
+}
+.p-access__text {
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+}
+@media screen and (min-width: 600px) {
+  .p-access {
+    height: 415px;
+  }
 }
 
 .p-aside {
@@ -170,7 +213,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list1 {
-    min-width: 357px;
+    min-width: 239.5px;
     min-height: 681px;
     margin: 40px 41px 40px 40px;
   }
@@ -191,7 +234,7 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list2 {
-    min-width: 357px;
+    min-width: 239.5px;
     min-height: 681px;
     margin: 40px 40px 40px 0;
   }
@@ -396,13 +439,14 @@ a {
 }
 @media screen and (min-width: 600px) {
   .p-mainvisual {
-    background: url(../../../images/tb_mainvisual.png);
+    background: url(../../../images/tb_mainvisual.png) center center no-repeat;
     background-size: cover;
+    min-width: 600px;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-mainvisual {
-    background: url(../../../images/mainVisual.png);
+    background: url(../../../images/mainVisual.png) center center no-repeat;
     background-size: cover;
     height: 400px;
     font-size: 40px;

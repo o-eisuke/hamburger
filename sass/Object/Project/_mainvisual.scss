@@ -27,12 +27,13 @@
   }
 
   @include m.tb {
-    background: url(../../../images/tb_mainvisual.png);
+    background: url(../../../images/tb_mainvisual.png) center center no-repeat;
     background-size: cover;
+    min-width: 600px;
   }
 
   @include m.pc {
-    background: url(../../../images/mainVisual.png);
+    background: url(../../../images/mainVisual.png) center center no-repeat;
     background-size: cover;
     // height: 530px;
     height: 400px;
