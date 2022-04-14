@@ -103,8 +103,17 @@ a {
     min-height: 415px;
     min-width: 600px;
     background: url(../../../images/tb_Map.png);
-    background-color: rgba(0, 0, 0, 0.9);
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-access {
+    height: 649px;
+    min-width: 1025px;
+    background: url(../../../images/pc_Map.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
   }
 }
 .p-access__film {
@@ -119,6 +128,12 @@ a {
 @media screen and (min-width: 600px) {
   .p-access__film {
     height: 100%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-access__film {
+    height: auto;
+    width: 60%;
   }
 }
 .p-access__article-Wrapper {
@@ -235,7 +250,7 @@ a {
 @media screen and (min-width: 1025px) {
   .p-foodmenu__list1 {
     height: 1193px;
-    width: 40%;
+    min-width: 361.5px;
     margin: 120px 80px 134px 111px;
   }
 }
@@ -256,7 +271,7 @@ a {
 @media screen and (min-width: 1025px) {
   .p-foodmenu__list2 {
     height: 1193px;
-    width: 40%;
+    min-width: 361.5px;
     margin: 120px 112px 134px 0;
   }
 }
@@ -286,6 +301,11 @@ a {
 @media screen and (min-width: 600px) {
   .p-foodmenu__dl1 {
     margin-top: 316px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-foodmenu__dl1 {
+    margin-top: 775px;
   }
 }
 .p-foodmenu__dl2 {
