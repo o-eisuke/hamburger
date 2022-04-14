@@ -132,7 +132,7 @@ a {
 }
 @media screen and (min-width: 1025px) {
   .p-access__film {
-    height: auto;
+    height: 100%;
     width: 60%;
   }
 }
@@ -141,16 +141,21 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
   justify-content: center;
   align-items: center;
   color: #fff;
   padding: 2rem;
 }
+@media screen and (min-width: 1025px) {
+  .p-access__article-Wrapper {
+    width: 60%;
+  }
+}
 .p-access__title {
   font-size: 30px;
   font-weight: bold;
   font-family: "M+ 1m";
+  color: #ffffff;
   position: relative;
 }
 .p-access__title::after {
@@ -167,6 +172,7 @@ a {
   font-size: 14px;
   font-weight: bold;
   font-family: "M+ 1m";
+  color: #ffffff;
 }
 @media screen and (min-width: 600px) {
   .p-access {
