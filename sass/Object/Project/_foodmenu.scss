@@ -16,7 +16,9 @@
     background-size: cover;
     min-width: 335px;
     min-height: 642px;
+    // height: auto;
     margin: 20px 20px 0 20px;
+    position: relative;
 
     @include m.tb {
       min-width: 239.5px;
@@ -40,7 +42,9 @@
     background-size: cover;
     min-width: 335px;
     min-height: 642px;
+    // height: auto;
     margin: 20px 20px 49px 20px;
+    position: relative;
 
     @include m.tb {
       min-width: 239.5px;
@@ -80,21 +84,32 @@
   &__dl1 {
     background-color: rgba(255, 255, 255, 0.8);
     width: auto;
-    height: 162px;
+    // height: 162px;
+    height: auto;
+    padding-bottom: 50px;
     margin: 237px 10px 9px 10px;
+    
+    // position: absolute;
+    // bottom: 0;
+
     @include m.tb {
-      margin-top: 316px;
+      // margin-top: 316px;
     }
     @include m.pc {
-      margin-top: 775px;
+      // margin-top: 775px;
     }
   }
 
   &__dl2 {
     background-color: rgba(255, 255, 255, 0.8);
     width: auto;
-    height: 162px;
+    // height: 162px;
+    height: auto;
+    padding-bottom: 50px;
     margin: 0px 10px 10px 10px;
+
+    // position: absolute;
+    // bottom: 0;
   }
 
   &__dt {

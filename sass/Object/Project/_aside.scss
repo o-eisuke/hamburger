@@ -5,14 +5,30 @@
   position: fixed;
   top: 0;
   right: -100%;
+  // right: 0%;
+  z-index: 1000;
+  width: 85%;
 
   @include m.tb {
-    
+    width: 44%;
   }
 
   @include m.pc {
+    width: auto;
     position: static;
     right: 0;
+    // z-index: 0;
+  }
+
+  &__button {  /*「Menu」ボタン押下したときの、「☓」ボタンの位置*/
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    cursor: pointer;
+    border: none;
+    @include m.pc {
+      display: none;
+    }
   }
 
   &__menu {

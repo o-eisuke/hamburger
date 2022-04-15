@@ -57,6 +57,17 @@ a {
   }
 }
 
+.zdo_drawer_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(51, 51, 51, 0.5);
+  display: none;
+  top: 0;
+  left: 0;
+}
+
 .c-button {
   border-radius: 10px;
   background-color: #F2EDE9;
@@ -64,6 +75,26 @@ a {
   border: solid 1px;
   border-color: #3C2A10;
   height: 46px;
+}
+
+.c-close {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.c-close__right, .c-close__left {
+  width: 32px;
+  height: 6px;
+  background-color: #707070;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+.c-close__right {
+  transform: rotate(45deg);
+}
+.c-close__left {
+  transform: rotate(-45deg);
 }
 
 .c-input {
@@ -184,11 +215,32 @@ a {
   position: fixed;
   top: 0;
   right: -100%;
+  z-index: 1000;
+  width: 85%;
+}
+@media screen and (min-width: 600px) {
+  .p-aside {
+    width: 44%;
+  }
 }
 @media screen and (min-width: 1025px) {
   .p-aside {
+    width: auto;
     position: static;
     right: 0;
+  }
+}
+.p-aside__button {
+  /*「Menu」ボタン押下したときの、「☓」ボタンの位置*/
+  position: absolute;
+  top: 25px;
+  right: 17px;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-aside__button {
+    display: none;
   }
 }
 .p-aside__menu {
@@ -245,6 +297,7 @@ a {
   min-width: 335px;
   min-height: 642px;
   margin: 20px 20px 0 20px;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list1 {
@@ -266,6 +319,7 @@ a {
   min-width: 335px;
   min-height: 642px;
   margin: 20px 20px 49px 20px;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list2 {
@@ -301,23 +355,15 @@ a {
 .p-foodmenu__dl1 {
   background-color: rgba(255, 255, 255, 0.8);
   width: auto;
-  height: 162px;
+  height: auto;
+  padding-bottom: 50px;
   margin: 237px 10px 9px 10px;
-}
-@media screen and (min-width: 600px) {
-  .p-foodmenu__dl1 {
-    margin-top: 316px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-foodmenu__dl1 {
-    margin-top: 775px;
-  }
 }
 .p-foodmenu__dl2 {
   background-color: rgba(255, 255, 255, 0.8);
   width: auto;
-  height: 162px;
+  height: auto;
+  padding-bottom: 50px;
   margin: 0px 10px 10px 10px;
 }
 .p-foodmenu__dt {
@@ -503,6 +549,12 @@ a {
   list-style: none;
   margin-bottom: 40px;
   margin-left: 66px;
+}
+
+.u-position {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 11px;
 }
 
 /**
