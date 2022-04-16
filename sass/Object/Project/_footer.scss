@@ -2,7 +2,7 @@
 @use "../../Foundation/variable" as v;
 
 .p-footer {
-  background: url(../../../images/sp_footer.png);
+  background: url(../images/sp_footer.png);
   background-size: cover;
   min-width: 375px;
   height: 150px;
@@ -12,12 +12,12 @@
   flex-direction: column;
 
   @include m.tb {
-    background: url(../../../images/tb_footer.png);
+    background: url(../images/tb_footer.png);
     background-size: cover;
   }
 
   @include m.pc {
-    background: url(../../../images/pc_footerf.png);
+    background: url(../images/pc_footerf.png);
     background-size: cover;
   }
 

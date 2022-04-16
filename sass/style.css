@@ -124,7 +124,7 @@ a {
 .p-access {
   min-height: 691px;
   min-width: 375px;
-  background: url(../../../images/sp_Map.png);
+  background: url(../images/sp_Map.png);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.9);
   position: relative;
@@ -133,7 +133,7 @@ a {
   .p-access {
     min-height: 415px;
     min-width: 600px;
-    background: url(../../../images/tb_Map.png);
+    background: url(../images/tb_Map.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.9);
   }
@@ -142,7 +142,7 @@ a {
   .p-access {
     min-height: 649px;
     min-width: 1025px;
-    background: url(../../../images/pc_Map.png);
+    background: url(../images/pc_Map.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.9);
   }
@@ -303,7 +303,7 @@ body.open {
   }
 }
 .p-foodmenu__list1 {
-  background: url(../../../images/takeOut.png);
+  background: url(../images/takeOut.png);
   background-size: cover;
   min-width: 335px;
   min-height: 642px;
@@ -326,7 +326,7 @@ body.open {
   }
 }
 .p-foodmenu__list2 {
-  background: url(../../../images/eatIn.png);
+  background: url(../images/eatIn.png);
   background-size: cover;
   min-width: 335px;
   min-height: 642px;
@@ -388,7 +388,7 @@ body.open {
 }
 
 .p-footer {
-  background: url(../../../images/sp_footer.png);
+  background: url(../images/sp_footer.png);
   background-size: cover;
   min-width: 375px;
   height: 150px;
@@ -399,13 +399,13 @@ body.open {
 }
 @media screen and (min-width: 600px) {
   .p-footer {
-    background: url(../../../images/tb_footer.png);
+    background: url(../images/tb_footer.png);
     background-size: cover;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-footer {
-    background: url(../../../images/pc_footerf.png);
+    background: url(../images/pc_footerf.png);
     background-size: cover;
   }
 }
@@ -529,7 +529,7 @@ body.open {
   height: 285px;
   width: auto;
   min-width: 375px;
-  background: url(../../../images/sp_mainvisual.png);
+  background: url(../images/sp_mainvisual.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -545,14 +545,14 @@ body.open {
 }
 @media screen and (min-width: 600px) {
   .p-mainvisual {
-    background: url(../../../images/tb_mainvisual.png) center center no-repeat;
+    background: url(../images/tb_mainvisual.png) center center no-repeat;
     background-size: cover;
     min-width: 600px;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-mainvisual {
-    background: url(../../../images/mainVisual.png) center center no-repeat;
+    background: url(../images/mainVisual.png) center center no-repeat;
     background-size: cover;
     height: 400px;
     font-size: 40px;
