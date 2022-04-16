@@ -2,12 +2,10 @@
 @use "../../Foundation/variable" as v;
 
 .p-access {
-  // height: 691px;
   min-height: 691px;
   min-width: 375px;
   background: url(../../../images/sp_Map.png);
   background-size: cover;
-  // background-color: rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.9);
   position: relative;
 
@@ -20,61 +18,40 @@
   }
 
   @include m.pc {
-    // height: 649px;
     min-height: 649px;
-    // width: 81%;
     min-width: 1025px;
     background: url(../../../images/pc_Map.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.9);
   }
-  // &::after {
-  //   z-index: 1;
-  //   content: “”;
-  //   display: block;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   background-color: rgba(0,0,0,0.7);
-  // }
-
-
 
   &__film {
     z-index: 1;
     content: “”;
     display: block;
-    // height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     height: 60%;
     background-color: rgba(0,0,0, 0.4);
-    // background-color: rgba(black, 0.7);
+
     @include m.tb {
       height: 100%;
     }
     @include m.pc {
       height: 100%;
-      // height: auto;
       width: 60%;
     }
   }
 
   &__article-Wrapper {
     width: 100%;
-
-    // position: absolute;
     top: 0;
     left: 0;
-
-    // z-index: 3;
-    // display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    // text-align: center;
     padding: 2rem;
     
     @include m.pc {

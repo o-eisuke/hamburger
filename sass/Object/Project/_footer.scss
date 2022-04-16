@@ -6,9 +6,6 @@
   background-size: cover;
   min-width: 375px;
   height: 150px;
-
-  // 下のリンクと著作を配置
-  // position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,27 +14,19 @@
   @include m.tb {
     background: url(../../../images/tb_footer.png);
     background-size: cover;
-    // width: 834px;
   }
 
   @include m.pc {
     background: url(../../../images/pc_footerf.png);
     background-size: cover;
-    // width: 100%;
   }
 
   &__ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    // position: absolute;
-    // margin: auto;
-    // top: 40px;
-    // right: 63px;
-
+ 
     &--partition {
-      // margin: 0 18x 0 18px;
       margin: 18px;
     }
   }
@@ -46,10 +35,5 @@
     color: v.$whiteFont;
     font-size: 14px;
     margin-top: 34px;
-    // position: absolute;
-    // top: 101px;
-    // right: 118px;
-    // justify-content: center;
-    // align-items: center;
   }
 }

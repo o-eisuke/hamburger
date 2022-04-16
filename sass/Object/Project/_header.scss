@@ -10,14 +10,6 @@
 
   // ボタンの配置
   position: relative;
-  
-  @include m.pc {
-    // flex-direction: row;   なくても大丈夫そう。。。( ；∀；)
-  }
-
-  @include m.subpc {
-
-  }
 
   &__title {
     // フォント

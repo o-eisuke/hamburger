@@ -2,8 +2,6 @@
 @use "../Foundation/variable" as v;
 
 .l-container {
-  // asideクラスを非表示にする
-  // position: relative;
 
   // グリッドを指定
   @include mixin.pc {
@@ -11,16 +9,4 @@
     grid-template-columns: 1fr 19%;
     grid-template-rows: 1fr 150px;
   }
-
-  // @include mixin.tb {
-  //   // asideクラスを非表示にするため
-  //   position: relative;
-  // }
-
-  // @include mixin.sp {
-  //   // asideクラスを非表示にするため
-  //   // position: relative;
-  // }
-
-  
 }

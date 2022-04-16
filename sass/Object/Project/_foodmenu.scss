@@ -3,7 +3,6 @@
 
 .p-foodmenu {
   list-style: none;
-  // min-width: 375px;
 
   @include m.tb {
     display: flex; /*「Take Out」と「Eat In」の箱を、タブレット以上は横並び*/
@@ -16,22 +15,18 @@
     min-width: 335px;
     min-height: 642px;
     margin: 20px 20px 0 20px;
-
+    //下の子要素（h2とdivに対して縦並び）
     display: flex;
     flex-direction: column;
-
-    // position: relative;
+    justify-content: space-between;
 
     @include m.tb {
       min-width: 239.5px;
-      // width: auto;
       min-height: 681px;
       margin: 40px 41px 40px 40px;
     }
 
     @include m.pc {
-      // height: 1193px;
-      // width: 40%;
       min-width: 361.5px;
       margin: 120px 80px 134px 111px;
     }
@@ -45,8 +40,10 @@
     min-width: 335px;
     min-height: 642px;
     margin: 20px 20px 49px 20px;
-
-    // position: relative;
+    //下の子要素（h2とdivに対して縦並び）
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @include m.tb {
       min-width: 239.5px;
@@ -55,8 +52,6 @@
     }
 
     @include m.pc {
-      // height: 1193px;
-      // width: 40%;
       min-width: 361.5px;
       margin: 120px 112px 134px 0;
     }
@@ -69,7 +64,7 @@
     font-size: 41px;
     margin-top: 11px;
     margin-left: 10px;
-    position: relative;
+    position: relative;  /*疑似要素作成のため*/
 
     //疑似要素で下線を作成
     &::after {
@@ -83,37 +78,11 @@
     }
   }
 
-  &__dl1 {
+  &__dl {
     background-color: rgba(255, 255, 255, 0.8);
     width: auto;
-    // height: 162px;
-    height: auto;
     min-height: 162px;
-    padding-bottom: 50px;
-    margin: 237px 10px 9px 10px;
-    
-    // position: absolute;
-    // bottom: 0;
-
-    @include m.tb {
-      // margin-top: 316px;
-    }
-    @include m.pc {
-      // margin-top: 775px;
-    }
-  }
-
-  &__dl2 {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: auto;
-    // height: 162px;
-    height: auto;
-    min-height: 162px;
-    padding-bottom: 50px;
-    margin: 0px 10px 10px 10px;
-
-    // position: absolute;
-    // bottom: 0;
+    margin: 0 10px 10px 10px;
   }
 
   &__dt {

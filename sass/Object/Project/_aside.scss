@@ -32,6 +32,7 @@
     right: 17px;
     cursor: pointer;
     border: none;
+    
     @include m.pc {
       display: none;
     }
@@ -41,8 +42,6 @@
     display: none;
     color: v.$mainColor;
     
-
-
     @include m.pc {
       display: block;
       margin-top: 82px;

@@ -310,6 +310,7 @@ body.open {
   margin: 20px 20px 0 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list1 {
@@ -330,6 +331,9 @@ body.open {
   min-width: 335px;
   min-height: 642px;
   margin: 20px 20px 49px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list2 {
@@ -351,6 +355,7 @@ body.open {
   margin-top: 11px;
   margin-left: 10px;
   position: relative;
+  /*疑似要素作成のため*/
 }
 .p-foodmenu__title::after {
   content: "";
@@ -361,21 +366,11 @@ body.open {
   position: absolute;
   bottom: -27px;
 }
-.p-foodmenu__dl1 {
+.p-foodmenu__dl {
   background-color: rgba(255, 255, 255, 0.8);
   width: auto;
-  height: auto;
   min-height: 162px;
-  padding-bottom: 50px;
-  margin: 237px 10px 9px 10px;
-}
-.p-foodmenu__dl2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: auto;
-  height: auto;
-  min-height: 162px;
-  padding-bottom: 50px;
-  margin: 0px 10px 10px 10px;
+  margin: 0 10px 10px 10px;
 }
 .p-foodmenu__dt {
   font-size: 22px;
@@ -569,10 +564,6 @@ body.open {
   list-style: none;
   margin-bottom: 40px;
   margin-left: 66px;
-}
-
-.u-position-textbox {
-  padding: 10px;
 }
 
 /**

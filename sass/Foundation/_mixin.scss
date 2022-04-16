@@ -5,11 +5,6 @@ $tb:600px;
 $pc:1025px;
 $subpc:1250px;
 
-// @mixin sp {
-//   @media screen and (min-width: ($sp)) {
-//     @content;
-//   }
-// }
 
 @mixin tb {
   @media screen and (min-width: ($tb)) {
