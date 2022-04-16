@@ -5,7 +5,6 @@
   position: fixed;
   top: 0;
   right: -100%;
-  // right: 0%;
   z-index: 1000;
   width: 85%;
 
@@ -17,7 +16,14 @@
     width: auto;
     position: static;
     right: 0;
-    // z-index: 0;
+  }
+
+  &.open {
+    position: fixed;
+    right: 0%;
+    transition: 0.4s;
+    height: 100%;
+    overflow: scroll;
   }
 
   &__button {  /*「Menu」ボタン押下したときの、「☓」ボタンの位置*/
@@ -73,8 +79,8 @@
     margin-left: 46px;
   }
 
+}
 
-
-
-
+body.open {
+  overflow: hidden
 }

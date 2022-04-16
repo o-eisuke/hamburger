@@ -3,11 +3,10 @@
 
 .p-foodmenu {
   list-style: none;
-  min-width: 375px;
+  // min-width: 375px;
 
   @include m.tb {
-    display: flex;
-
+    display: flex; /*「Take Out」と「Eat In」の箱を、タブレット以上は横並び*/
   }
 
   &__list1 {
@@ -16,8 +15,10 @@
     background-size: cover;
     min-width: 335px;
     min-height: 642px;
-    // height: auto;
     margin: 20px 20px 0 20px;
+
+    display: flex;
+    flex-direction: column;
 
     // position: relative;
 
@@ -29,7 +30,7 @@
     }
 
     @include m.pc {
-      height: 1193px;
+      // height: 1193px;
       // width: 40%;
       min-width: 361.5px;
       margin: 120px 80px 134px 111px;
@@ -43,7 +44,6 @@
     background-size: cover;
     min-width: 335px;
     min-height: 642px;
-    // height: auto;
     margin: 20px 20px 49px 20px;
 
     // position: relative;
@@ -55,7 +55,7 @@
     }
 
     @include m.pc {
-      height: 1193px;
+      // height: 1193px;
       // width: 40%;
       min-width: 361.5px;
       margin: 120px 112px 134px 0;

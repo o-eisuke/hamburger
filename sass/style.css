@@ -230,6 +230,13 @@ a {
     right: 0;
   }
 }
+.p-aside.open {
+  position: fixed;
+  right: 0%;
+  transition: 0.4s;
+  height: 100%;
+  overflow: scroll;
+}
 .p-aside__button {
   /*「Menu」ボタン押下したときの、「☓」ボタンの位置*/
   position: absolute;
@@ -282,13 +289,17 @@ a {
   margin-left: 46px;
 }
 
+body.open {
+  overflow: hidden;
+}
+
 .p-foodmenu {
   list-style: none;
-  min-width: 375px;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu {
     display: flex;
+    /*「Take Out」と「Eat In」の箱を、タブレット以上は横並び*/
   }
 }
 .p-foodmenu__list1 {
@@ -297,6 +308,8 @@ a {
   min-width: 335px;
   min-height: 642px;
   margin: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list1 {
@@ -307,7 +320,6 @@ a {
 }
 @media screen and (min-width: 1025px) {
   .p-foodmenu__list1 {
-    height: 1193px;
     min-width: 361.5px;
     margin: 120px 80px 134px 111px;
   }
@@ -328,7 +340,6 @@ a {
 }
 @media screen and (min-width: 1025px) {
   .p-foodmenu__list2 {
-    height: 1193px;
     min-width: 361.5px;
     margin: 120px 112px 134px 0;
   }
@@ -503,6 +514,15 @@ a {
   font-size: 20px;
   font-family: Roboto;
   color: #707070;
+  cursor: pointer;
+}
+.p-header__menu.active {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-header__menu {
+    display: none;
+  }
 }
 @media screen and (min-width: 1250px) {
   .p-header__menu {
