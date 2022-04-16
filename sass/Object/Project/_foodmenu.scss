@@ -18,7 +18,8 @@
     min-height: 642px;
     // height: auto;
     margin: 20px 20px 0 20px;
-    position: relative;
+
+    // position: relative;
 
     @include m.tb {
       min-width: 239.5px;
@@ -44,7 +45,8 @@
     min-height: 642px;
     // height: auto;
     margin: 20px 20px 49px 20px;
-    position: relative;
+
+    // position: relative;
 
     @include m.tb {
       min-width: 239.5px;
@@ -86,6 +88,7 @@
     width: auto;
     // height: 162px;
     height: auto;
+    min-height: 162px;
     padding-bottom: 50px;
     margin: 237px 10px 9px 10px;
     
@@ -105,6 +108,7 @@
     width: auto;
     // height: 162px;
     height: auto;
+    min-height: 162px;
     padding-bottom: 50px;
     margin: 0px 10px 10px 10px;
 

@@ -122,7 +122,7 @@ a {
 }
 
 .p-access {
-  height: 691px;
+  min-height: 691px;
   min-width: 375px;
   background: url(../../../images/sp_Map.png);
   background-size: cover;
@@ -140,7 +140,7 @@ a {
 }
 @media screen and (min-width: 1025px) {
   .p-access {
-    height: 649px;
+    min-height: 649px;
     min-width: 1025px;
     background: url(../../../images/pc_Map.png);
     background-size: cover;
@@ -151,6 +151,8 @@ a {
   z-index: 1;
   content: “”;
   display: block;
+  width: 100%;
+  position: absolute;
   top: 0;
   left: 0;
   height: 60%;
@@ -169,7 +171,6 @@ a {
 }
 .p-access__article-Wrapper {
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   justify-content: center;
@@ -204,11 +205,6 @@ a {
   font-weight: bold;
   font-family: "M+ 1m";
   color: #ffffff;
-}
-@media screen and (min-width: 600px) {
-  .p-access {
-    height: 415px;
-  }
 }
 
 .p-aside {
@@ -297,7 +293,6 @@ a {
   min-width: 335px;
   min-height: 642px;
   margin: 20px 20px 0 20px;
-  position: relative;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list1 {
@@ -319,7 +314,6 @@ a {
   min-width: 335px;
   min-height: 642px;
   margin: 20px 20px 49px 20px;
-  position: relative;
 }
 @media screen and (min-width: 600px) {
   .p-foodmenu__list2 {
@@ -356,6 +350,7 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
   width: auto;
   height: auto;
+  min-height: 162px;
   padding-bottom: 50px;
   margin: 237px 10px 9px 10px;
 }
@@ -363,6 +358,7 @@ a {
   background-color: rgba(255, 255, 255, 0.8);
   width: auto;
   height: auto;
+  min-height: 162px;
   padding-bottom: 50px;
   margin: 0px 10px 10px 10px;
 }
@@ -549,12 +545,6 @@ a {
   list-style: none;
   margin-bottom: 40px;
   margin-left: 66px;
-}
-
-.u-position {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 11px;
 }
 
 /**

@@ -2,7 +2,8 @@
 @use "../../Foundation/variable" as v;
 
 .p-access {
-  height: 691px;
+  // height: 691px;
+  min-height: 691px;
   min-width: 375px;
   background: url(../../../images/sp_Map.png);
   background-size: cover;
@@ -19,7 +20,8 @@
   }
 
   @include m.pc {
-    height: 649px;
+    // height: 649px;
+    min-height: 649px;
     // width: 81%;
     min-width: 1025px;
     background: url(../../../images/pc_Map.png);
@@ -42,7 +44,9 @@
     z-index: 1;
     content: “”;
     display: block;
-    // position: absolute;
+    // height: 100%;
+    width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
     height: 60%;
@@ -60,9 +64,11 @@
 
   &__article-Wrapper {
     width: 100%;
-    position: absolute;
+
+    // position: absolute;
     top: 0;
     left: 0;
+
     // z-index: 2;
     // display: flex;
     justify-content: center;
@@ -103,10 +109,6 @@
     font-family: "M+ 1m";
     color: v.$whiteFont;
     // z-index: 3;
-  }
-
-  @include m.tb {
-    height: 415px;
   }
 
   
