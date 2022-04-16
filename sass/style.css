@@ -189,6 +189,7 @@ a {
   font-family: "M+ 1m";
   color: #ffffff;
   position: relative;
+  z-index: 3;
 }
 .p-access__title::after {
   content: "";
@@ -205,6 +206,9 @@ a {
   font-weight: bold;
   font-family: "M+ 1m";
   color: #ffffff;
+  position: relative;
+  /*テキストを浮かすため*/
+  z-index: 3;
 }
 
 .p-aside {
@@ -545,6 +549,10 @@ a {
   list-style: none;
   margin-bottom: 40px;
   margin-left: 66px;
+}
+
+.u-position-textbox {
+  padding: 10px;
 }
 
 /**
