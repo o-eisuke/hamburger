@@ -31,13 +31,19 @@
 
 /* Project ------------ */
 @use "Object/Project/access";
+@use "Object/Project/archive-visual";
 @use "Object/Project/aside" as ad;
+@use "Object/Project/card";
 @use "Object/Project/foodmenu";
 @use "Object/Project/footer" as ft;
 @use "Object/Project/form";
 @use "Object/Project/header" as hd;
 @use "Object/Project/mainvisual";
 @use "Object/Project/menu";
+@use "Object/Project/pagination";
+@use "Object/Project/pagination-sp";
+@use "Object/Project/subheading";
 
 
 /* Utility ------------ */
+@use "Object/Utility/wrapper";
