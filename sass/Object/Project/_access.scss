@@ -75,6 +75,11 @@
       background-color: #fff;
       position: absolute;
       bottom: -20px;
+
+      @include m.pc {
+        // margin: 55.5px 0 63.5px 0;
+        bottom: -55.5px;
+      }
     }
     
   }
@@ -87,6 +92,10 @@
     color: v.$whiteFont;
     position: relative; /*テキストを浮かすため*/
     z-index: 3;
+
+    @include m.pc {
+      margin-top: 119px;
+    }
   }
 
   

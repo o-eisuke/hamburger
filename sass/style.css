@@ -200,6 +200,11 @@ a {
   position: absolute;
   bottom: -20px;
 }
+@media screen and (min-width: 1025px) {
+  .p-access__title::after {
+    bottom: -55.5px;
+  }
+}
 .p-access__text {
   margin-top: 40px;
   font-size: 14px;
@@ -209,6 +214,11 @@ a {
   position: relative;
   /*テキストを浮かすため*/
   z-index: 3;
+}
+@media screen and (min-width: 1025px) {
+  .p-access__text {
+    margin-top: 119px;
+  }
 }
 
 .p-aside {
