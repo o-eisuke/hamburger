@@ -2,12 +2,19 @@
 
 // $sp:375px;
 $tb:600px;
+$subtb:750px;
 $pc:1025px;
 $subpc:1250px;
 
 
 @mixin tb {
   @media screen and (min-width: ($tb)) {
+    @content;
+  }
+}
+
+@mixin subtb {
+  @media screen and (min-width: ($subtb)) {
     @content;
   }
 }

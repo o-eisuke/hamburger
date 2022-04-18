@@ -1,8 +1,9 @@
-.p-wrapper {
-  // padding-left: 43px;
-  // padding-right: 45px;
-  padding-left: 20px;
-  padding-right: 18.9px;
+@use "../../Foundation/mixin" as m;
 
+.p-wrapper {
   padding: 30px 20px 70px 20px;
+
+  @include m.pc {
+    padding: 36px 36px 105.5px 36px;
+  }
 }

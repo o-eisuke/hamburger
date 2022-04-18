@@ -1,8 +1,13 @@
+@use "../../Foundation/mixin" as m;
 @use "../../Foundation/variable" as v;
 
 .p-pagination-sp {
 
   margin: 0 20px 30px 20px;
+
+  @include m.subtb {
+    display: none;
+  }
 
   &__list {
     list-style: none;
