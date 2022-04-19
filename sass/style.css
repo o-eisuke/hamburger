@@ -823,13 +823,18 @@ body.open {
   color: #3C2A10;
 }
 
-.p-wrapper {
+.p-archive-wrapper {
   padding: 30px 20px 70px 20px;
 }
 @media screen and (min-width: 1025px) {
-  .p-wrapper {
+  .p-archive-wrapper {
     padding: 36px 36px 105.5px 36px;
   }
+}
+
+.p-single-page-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /**
