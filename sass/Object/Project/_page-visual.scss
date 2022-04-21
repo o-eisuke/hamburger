@@ -1,8 +1,8 @@
 @use "../../Foundation/mixin" as m;
 @use "../../Foundation/variable" as v;
 
-.p-single-visual {
-  background: url(/images/sp_tomato-cheese.png);
+.p-page-visual {
+  background: url(/images/sp_shop.png);
   background-size: cover;
   min-height: 225px;
   min-width: 375px;
@@ -11,13 +11,13 @@
   position: relative;
 
   @include m.tb {
-    background: url(/images/tb_tomato-cheese.png);
+    background: url(/images/tb_shop.png);
     background-size: cover;
     height: 500px;
   }
 
   @include m.pc {
-    background: url(/images/pc_tomato-cheese.png);
+    background: url(/images/pc_shop.png);
     background-size: cover;
     height: 500px;
   }
