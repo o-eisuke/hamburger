@@ -1,0 +1,19 @@
+.p-second-description {
+  display: flex;
+  margin-bottom: 30px;
+
+  &__text {
+    min-width: 182px;
+    min-height: 173px;
+    margin-right: 10px;
+  }
+
+  &__img {
+    // min-height: 89px;
+    // min-width: 144px;
+    height: 100%;
+    width: 100%;
+    // object-fit: contain;
+    object-fit: cover;
+  }
+}

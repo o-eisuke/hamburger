@@ -1,0 +1,21 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-single-visual {
+  background: url(/images/sp_tomato-cheese.png);
+  background-size: cover;
+  min-height: 225px;
+  min-width: 375px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$whiteFont;
+    position: absolute;
+    left: 26px;
+  }
+}

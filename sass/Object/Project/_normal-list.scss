@@ -1,0 +1,29 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-normal-list {
+  font-size: 16px;
+  font-family: "M+ 1m";
+  color: v.$brownColor;
+  margin-bottom: 30px;
+
+  & ul {
+    list-style: none;
+  }
+  &__ul {
+    
+
+    &--first {
+      margin-bottom: 20px;
+    }
+
+    &--second {
+      padding-left: 18px;
+      margin-bottom: 20px;
+    }
+
+    &--third {
+      // list-style: none;
+    }
+  }
+}

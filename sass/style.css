@@ -4,6 +4,10 @@ ul {
   margin: 0;
 }
 
+.l-article {
+  background-color: #FFFDFA;
+}
+
 .l-aside {
   background-color: #F2EDE9;
 }
@@ -63,6 +67,14 @@ ul {
   left: 0;
 }
 
+.c-bold-text {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  margin-bottom: 177px;
+}
+
 .c-button {
   border-radius: 10px;
   background-color: #F2EDE9;
@@ -103,6 +115,11 @@ ul {
   font-size: 20px;
 }
 
+.c-main-burger {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .c-menu-list {
   color: #707070;
   margin-bottom: 23px;
@@ -114,6 +131,28 @@ ul {
   background-color: #fff;
   display: block;
   font-size: 0;
+}
+
+.c-second-burger-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: auto;
+  width: auto;
+}
+
+.c-single-button {
+  width: 100%;
+  min-height: 81px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  background-color: #F2EDE9;
+  border-radius: 20px;
+  border: 1px solid #707070;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .p-access {
@@ -323,6 +362,28 @@ body.open {
   overflow: hidden;
 }
 
+.p-blockquote {
+  min-width: 335px;
+  height: auto;
+  background-color: #F5F5F5;
+  padding: 30px 16px;
+  margin-bottom: 30px;
+}
+.p-blockquote__text {
+  font-size: 16px;
+  font-family: "M+ 1m";
+  margin-bottom: 30px;
+}
+.p-blockquote__cite {
+  font-size: 16px;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+}
+.p-blockquote__cite > a {
+  color: #4A6C9B;
+  text-decoration: underline;
+}
+
 .p-card {
   margin-bottom: 20.9px;
 }
@@ -423,6 +484,39 @@ body.open {
     width: 292px;
     height: 76px;
   }
+}
+
+.p-description {
+  margin-top: 30px;
+  margin-bottom: 34px;
+}
+.p-description__heading {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  margin-bottom: 30px;
+}
+.p-description__text {
+  font-size: 16px;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+}
+
+.p-first-description {
+  display: flex;
+  margin-bottom: 30px;
+}
+.p-first-description__img {
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-first-description__text {
+  min-height: 89px;
+  min-width: 144px;
 }
 
 .p-foodmenu {
@@ -616,6 +710,12 @@ body.open {
   }
 }
 
+.gallery__item {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
 .p-header {
   display: flex;
   flex-flow: column;
@@ -703,6 +803,36 @@ body.open {
   margin-left: 66px;
 }
 
+.p-normal-list {
+  font-size: 16px;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  margin-bottom: 30px;
+}
+.p-normal-list ul {
+  list-style: none;
+}
+.p-normal-list__ul--first {
+  margin-bottom: 20px;
+}
+.p-normal-list__ul--second {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+.p-order-list {
+  font-size: 16px;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.p-order-list__ol--first {
+  margin-bottom: 20px;
+}
+.p-order-list__ol--second {
+  padding-left: 58px;
+  margin-bottom: 20px;
+}
 .p-pagination {
   display: none;
 }
@@ -767,6 +897,44 @@ body.open {
   right: 0;
 }
 
+.p-preformatted {
+  background-color: #F5F5F5;
+  min-width: 336px;
+  min-height: 236px;
+  padding: 50px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+.p-preformatted__code {
+  font-size: 16px;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+}
+
+.p-second-burger {
+  margin-bottom: 30px;
+  text-align: center .p-second-burger __img;
+  text-align-min-width: 267px;
+  text-align-min-height: 166px;
+}
+
+.p-second-description {
+  display: flex;
+  margin-bottom: 30px;
+}
+.p-second-description__text {
+  min-width: 182px;
+  min-height: 173px;
+  margin-right: 10px;
+}
+.p-second-description__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-pagination-sp {
   margin: 0 20px 30px 20px;
 }
@@ -811,6 +979,53 @@ body.open {
   right: 0;
 }
 
+.p-single-heading__h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  margin-bottom: 31px;
+}
+.p-single-heading__h4 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  margin-bottom: 37px;
+}
+.p-single-heading__h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  margin-bottom: 30px;
+}
+.p-single-heading__h6 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #3C2A10;
+  margin-bottom: 30px;
+}
+
+.p-single-visual {
+  background: url(/images/sp_tomato-cheese.png);
+  background-size: cover;
+  min-height: 225px;
+  min-width: 375px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.p-single-visual__title {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: #ffffff;
+  position: absolute;
+  left: 26px;
+}
+
 .p-subheading {
   width: 100%;
 }
@@ -821,6 +1036,35 @@ body.open {
 .p-subheading__text {
   margin-bottom: 20px;
   color: #3C2A10;
+}
+
+.p-table {
+  border: solid 1px #707070;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "M+ 1m";
+  width: 100%;
+  margin-bottom: 30px;
+}
+.p-table tr {
+  border: solid 1px #707070;
+  border-collapse: collapse;
+}
+.p-table td {
+  border: solid 1px #707070;
+  border-collapse: collapse;
+}
+.p-table__td {
+  height: 77px;
+}
+.p-table__td--first {
+  width: 40%;
+  padding: 28px 0px 28px 30px;
+}
+.p-table__td--second {
+  width: 60%;
+  padding: 28px 0px 28px 30px;
 }
 
 .p-archive-wrapper {
