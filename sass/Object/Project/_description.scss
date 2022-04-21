@@ -11,11 +11,19 @@
     font-family: "M+ 1m";
     color: v.$brownColor;
     margin-bottom: 30px;
+
+    @include m.tb {
+      margin-bottom: 60px;
+    }
   }
 
   &__text {
     font-size: 16px;
     font-family: "M+ 1m";
     color: v.$brownColor;
+
+    @include m.tb {
+      margin-bottom: 60px;
+    }
   }
 }

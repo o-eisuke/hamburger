@@ -3,11 +3,14 @@
 
 .p-blockquote {
   min-width: 335px;
-  // min-height: 617px;
   height: auto;
   background-color: #F5F5F5;
   padding: 30px 16px;
   margin-bottom: 30px;
+
+  @include m.tb {
+    margin-bottom: 60px;
+  }
 
   &__text {
     font-size: 16px;
